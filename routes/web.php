@@ -17,8 +17,18 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
+// Route::get('/', function () {
+//     print(holaMundo());
+// });
+
 Route::get('/createNote', [HomeController::class, 'createNote']);
 
 Route::post('/newNota', [HomeController::class, 'newNota']);
 
 Route::delete('/delNota', [HomeController::class, 'delNota']);
+
+Route::get('notes/exportExcel/', [HomeController::class, 'exportExcel']);
+
+Route::get('notes/importExcel/', [HomeController::class, 'importExcel']);
+
+Route::get('notes/exportPDF/', [HomeController::class, 'exportPDF']);

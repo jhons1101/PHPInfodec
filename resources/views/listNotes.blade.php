@@ -15,6 +15,18 @@
                 <hr />
                 <div class="row">
                     <div class="col mt-2 mb-2 text-end">
+                        <a href="/notes/exportExcel/">
+                            <button type="button" class="btn btn-dark">EXPORTAR EXCEL</button>
+                        </a>
+
+                        <a href="/notes/importExcel/">
+                            <button type="button" class="btn btn-dark">IMPORTAR EXCEL</button>
+                        </a>
+
+                        <a href="/notes/exportPDF/">
+                            <button type="button" class="btn btn-dark">EXPORTAR PDF</button>
+                        </a>
+
                         <a href="/createNote">
                             <button type="button" class="btn btn-dark">NUEVO</button>
                         </a>
