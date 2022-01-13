@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PruebaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index']);
 
-// Route::get('/', function () {
-//     print(holaMundo());
-// });
-
 Route::get('/createNote', [HomeController::class, 'createNote']);
 
 Route::post('/newNota', [HomeController::class, 'newNota']);
@@ -32,3 +29,8 @@ Route::get('notes/exportExcel/', [HomeController::class, 'exportExcel']);
 Route::get('notes/importExcel/', [HomeController::class, 'importExcel']);
 
 Route::get('notes/exportPDF/', [HomeController::class, 'exportPDF']);
+
+Route::get('/prueba/export', [PruebaController::class, 'export'])->name('exportExcel');
+
+Route::get('/prueba/callJob', [PruebaController::class, 'callJob'])->name('callJob');
+

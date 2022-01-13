@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\NotaController;
+use App\Http\Controllers\PruebaController;
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::resource('notas', NotaController::class);
+Route::resource('prueba', PruebaController::class);
